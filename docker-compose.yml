@@ -6,7 +6,7 @@ services:
     container_name: trading-journal
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "30001:3000"
     volumes:
       # Map database to persist data locally
       - ./data/db:/app/src/db

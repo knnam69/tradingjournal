@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  trading-journal:
+    build: .
+    container_name: trading-journal
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # Map database to persist data locally
+      - ./data/db:/app/src/db
+      # Map uploads to persist screenshots locally
+      - ./data/uploads:/app/public/uploads
+    environment:
+      - NODE_ENV=production
+      - PORT=3000

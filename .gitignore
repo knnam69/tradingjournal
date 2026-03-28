@@ -1,0 +1,8 @@
+node_modules
+public/uploads/*
+!public/uploads/.gitkeep
+src/db/trading.db
+src/db/trading.db-wal
+src/db/trading.db-shm
+data/
+.env

@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env
+Dockerfile
+.dockerignore
+docker-compose.yml
+public/uploads/*
+!public/uploads/.gitkeep
+src/db/trading.db
+src/db/trading.db-wal
+src/db/trading.db-shm

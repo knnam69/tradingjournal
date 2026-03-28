@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const path = require('path');
 const Database = require('better-sqlite3');
 
-const DB_PATH = path.join(__dirname, '..', 'db', 'trading.db');
+const DB_PATH = path.join(__dirname, '..', '..', 'data', 'trading.db');
 
 async function resetPassword() {
   const args = process.argv.slice(2);

@@ -14,7 +14,7 @@ RUN npm install --production
 COPY . .
 
 # Ensure necessary directories exist for volumes
-RUN mkdir -p /app/src/db /app/public/uploads
+RUN mkdir -p /app/data /app/public/uploads
 
 # Expose application port
 EXPOSE 3000

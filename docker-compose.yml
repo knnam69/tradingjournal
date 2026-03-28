@@ -9,7 +9,7 @@ services:
       - "30001:3000"
     volumes:
       # Map database to persist data locally
-      - ./data/db:/app/src/db
+      - ./data:/app/data
       # Map uploads to persist screenshots locally
       - ./data/uploads:/app/public/uploads
     environment:
